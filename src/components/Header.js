@@ -18,8 +18,7 @@ export default class Header extends Component {
     let resumeData = this.props.resumeData;
     return (
       <React.Fragment>
-        <BackgroundSlider images={[ image1, image2, image3, image4, image5, image6
-          , image7, image8, image9, image10, image11]} duration={2} transition={3} />
+
       <header id="home">
          <nav id="nav-wrap">
             <a className="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
@@ -59,7 +58,8 @@ export default class Header extends Component {
          <p className="scrolldown">
             <a className="smoothscroll" href="#about"><i className="icon-down-circle"></i></a>
          </p>
-
+        <BackgroundSlider images={[ image1, image2, image3, image4, image5, image6
+          , image7, image8, image9, image10, image11]} duration={2} transition={3} />
       </header>
       </React.Fragment>
     );

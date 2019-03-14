@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "gh-pages": "^2.0.1",
     "react": "^16.6.0",
     "react-background-slider": "^1.2.0",
     "react-background-slideshow": "^1.0.4",
@@ -11,6 +12,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -23,5 +26,9 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "homepage": "https://andrejd1.github.io.git",
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.7.2"
+  }
 }
